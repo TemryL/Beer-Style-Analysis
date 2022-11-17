@@ -1,6 +1,6 @@
-# Title
+# The Best Beer I've Ever Bought / Have You Tried This Amazing Beer? / Beer-inder / Beervise: Pick the right beer for you/ Try it !/ Untastd / Taste it your way
 
-## Table of Contents
+## Table of Contents 
 - [Abstract](#abstract)
 - [Research questions](#research-questions)
 - [Data](#data)
@@ -10,28 +10,83 @@
 - [Questions for TAs](#questions-for-tas)
 - [Authors](#authors)
 
-## Abstract
-A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?
+## 📝 Abstract 
+Nowadays, drinking beer has become a global social habit, whether it be for parties, football games or meeting with friends. In order to answer this demand, the market has become very attractive and diverse with breweries all around the world producing a wide variety of beer styles. This wide range of offer makes it more difficult for costumers to find a style of beer they might like. Being aware of this issue and with the aim to improve their customers’ satisfaction, an international supermarket chain called upon our data scientists’ team to help better organize their beer shelves. Our strategy is to associate each row of the shelves to a customers’ type. Then, for each of these customers’ categories, the most appreciated styles of beers are promoted with a description of their main features. Besides, in order to satisfy the firms’ multidomestic strategy, the arrangement of the beer shelves is customized according to the local tastes and preferences and their evolution over time. 
 
-## Research questions
-A list of research questions you would like to address during the project.
+## ❓ Research questions 
+1. What are the main features of each beer style (e.g. abv, countries or breweries where they are produced…)? Can some beer styles be merged?
+2. From the reviews, what are the adjectives that best describe each beer style?
+3. Is the taste of a user influenced by his country of origin or his expertise? 
+4. Is popularity of a beer style evolving with time? (In terms of consumption and appreciation)
 
-## Data
+## 💾 Data
 (if any): List the additional dataset(s) you want to use (if any), and some ideas on how you expect to get, manage, process, and enrich it/them. Show us that you’ve read the docs and some examples, and that you have a clear idea on what to expect. Discuss data size and format if relevant. It is your responsibility to check that what you propose is feasible.
 
-## Methods
+## 📊 Methods 
 
-## Proposed timeline
+**Task 1**: Data cleaning and pre-processing.
+
+**Task 2**: Descriptive statistical analysis of each beer style.
+
+Some analyses are quite trivial and will not be detailed here. We will focus on the most interesting methods.
+
+- What are the most common beer style? (based on number of ratings and reviews).
+- Investigate if we can merge some style together. (ex: English pale ale vs American pale ale).
+- What are the characteristics of each beer style (abv, location)
+- What are the grades for each beer style?. (appearance, taste, palate, aroma)
+- Analysis of beers style based on location.
+
+**Task 3**: Textual analysis of the reviews.
+
+To determine which adjectives best describe each style, we will carry out a lexical description based on the textual reviews. Either we choose the adjectives that occurred the most in the reviews, therefore we show the adjectives that have been used the most, or we try to find the adjectives closest to all other (taking number of occurrence into account). For the last option we will use NLP and word embedings.  
+
+**Task4**: Categorization of the users based on their level of expertise and the type of beer customers they are.
+
+Users with only a few reviews and ratings or that have only rated a specific type of beer are considered as « beginners ». On the other hand, users which have rated a lot of different beer styles are rather « experts ». Besides, users which have rated and tested a majority of beer coming from their homeland are rather « nationalist ». Some other categories might arise throughout our analysis and note that users can be associated to different categories.
+
+**Task 5**: Analysis of the influence of user features based on their beer style preferences.
+
+For this task we first use a Bayesian approach to estimate ratings given beer features (brewery, location, abv, beer style) and remove ratings which are too far from our prediction. We will then compute the average scores for each user category for each style and sort out the most liked ones
+
+**Task 6**: Github-site building and data story redaction.
+## ⏰ Proposed timeline 
 
 | Period                 | Description               |
 | ---------------------- | ------------------------- |
-| From - To      | Task |
+| 25.11.2022 - 02.11.2022      | Task 1 and 2|
+| 02.11.2022 - 07.11.2022      | Task 3 and 4|
+| 08.11.2022 - 16.12.2022      | Task 4 and 5|
+| 17.12.2022 - 22.12.2022      | Task 6 |
 
+## 🤝 Team Organization 
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Team member</th>
+    <th class="tg-0pky">Tasks</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Lola Vegeas</td>
+    <td class="tg-0pky">2 and 5</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Jean Decroux</td>
+    <td class="tg-0pky">2 and 5</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Ramy Charfeddine</td>
+    <td class="tg-0pky"> 4 and 6</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Tom Mery</td>
+    <td class="tg-0pky">1 and 3</td>
+  </tr>
+</tbody>
+</table>
 
-## Team Organization
-A list of internal milestones up until project Milestone P3.
-
-## Questions for TAs
+## ❔ Questions for TAs 
 Add here any questions you have for us related to the proposed project.
 
 ## Authors
