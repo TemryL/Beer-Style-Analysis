@@ -88,7 +88,7 @@ For this task we first use a Bayesian approach to estimate ratings given beer fe
 </table>
 
 ## ❔ Questions for TAs 
-Do you think it is a good idea (useful) to merge BeerAdvocate and RateBeer folder together? It seems to require a lot of work as some value will have to be recomputed over the merged dataset (averaged values), ids will have to be reset and changed over the files, also some attribute value are not the same in the two dataset for the same entity (for example nbr_beers in breweries). Finally, in the matched beer data folder, do you know how 'sim' and 'diff' values have been computed? We guess they are values representing difference and similarity, but we are not sure.
+Add here any questions you have for us related to the proposed project.
 
 ## Authors
 - Lola Vegeas (lola.vegeas@epfl.ch)
