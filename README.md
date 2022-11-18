@@ -1,4 +1,4 @@
-# Beervise: Pick the right beer for you
+# Beervise: Pick the right beer for you!
 
 ## Table of Contents 
 - [Abstract](#abstract)
