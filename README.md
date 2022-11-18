@@ -20,7 +20,7 @@ Nowadays, drinking beer has become a global social habit, whether it be for part
 4. Is popularity of a beer style evolving with time? (In terms of consumption and appreciation)
 
 ## 💾 Data
-For this project two dataset have been provided: data from [BeerAdvocate](https://www.beeradvocate.com) as well as from [RateBeer](https://www.ratebeer.com/) websites.
+For this project two datasets have been provided: data from [BeerAdvocate](https://www.beeradvocate.com) as well as from [RateBeer](https://www.ratebeer.com/) websites.
 Both dataset are organized following the same relational model (see `relational_model` folder). The following analysis will be done on each dataset separately and the results will be compared at the end.
 
 ## 📊 Methods 
