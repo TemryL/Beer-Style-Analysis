@@ -22,7 +22,7 @@ Nowadays, drinking beer has become a global social habit, whether it be for part
 ## 💾 Data
 For this project two dataset have been provided: data from [BeerAdvocate](https://www.beeradvocate.com) as well as from [RateBeer](https://www.ratebeer.com/) websites.
 Both dataset are organized following the same relational model (see `ER_diagram.png` and `relations.png` in figures folder). The following analysis will be done on each dataset separately and the results will be compared at the end. Raw data are available [here](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF).
-Processed data are available [here](). In order to reproduce the analysis a data folder with the following architecture should be placed in the root directory of the repository:
+Processed data are available [here](https://drive.switch.ch/index.php/s/QBPV4ptiUoV8XER). In order to reproduce the analysis a data folder with the following architecture should be placed in the root directory of the repository:
 
 <pre>  
 ├─── data
