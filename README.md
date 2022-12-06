@@ -21,7 +21,44 @@ Nowadays, drinking beer has become a global social habit, whether it be for part
 
 ## 💾 Data
 For this project two dataset have been provided: data from [BeerAdvocate](https://www.beeradvocate.com) as well as from [RateBeer](https://www.ratebeer.com/) websites.
-Both dataset are organized following the same relational model (see `relational_model` folder). The following analysis will be done on each dataset separately and the results will be compared at the end.
+Both dataset are organized following the same relational model (see `ER_diagram.png` and `relations` in figures folder). The following analysis will be done on each dataset separately and the results will be compared at the end. Raw data are available [here] (https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF).
+Processed data are available [here](). In order to reproduce the analysis a data folder with the following architecture should be placed in the root directory of the repository:
+
+<pre>  
+├─── data
+    ├─── raw
+      ├─── BeerAdvocate
+        ├─── beers.csv
+        ├─── breweries.csv
+        ├─── ratings.txt
+        ├─── reviews.txt
+        ├─── users.csv
+      ├─── RateBeer
+        ├─── beers.csv
+        ├─── breweries.csv
+        ├─── ratings.txt
+        ├─── reviews.txt
+        ├─── users.csv
+    ├─── processed
+      ├─── BeerAdvocate
+        ├─── beers.pkl
+        ├─── breweries.pkl
+        ├─── ratings.pkl
+        ├─── reviews.pkl
+        ├─── users.pkl
+      ├─── RateBeer
+        ├─── beers.pkl
+        ├─── breweries.pkl
+        ├─── ratings.pkl
+        ├─── reviews.pkl
+        ├─── users.pkl 
+</pre>
+
+If one wants to manually re-produced the processed data from the raw data, simply move to the src folder and execute:
+  
+  python process_raw_data.py
+
+Make sure that the data in the raw data folder have been uncompressed. Be aware that running the script took around 20 min on Apple silicon M1 Pro. 
 
 ## 📊 Methods 
 
