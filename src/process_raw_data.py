@@ -74,20 +74,20 @@ def change_dtype(ratings, reviews):
 
 if __name__ == '__main__':
     for dataset in ['BeerAdvocate', 'RateBeer']:
-        print('Processing {} dataset:'.format(dataset))
-        ratings, reviews = parse_ratings(RAW_DATA_FOLDER + dataset + '/ratings.txt')
-        ratings, reviews = change_dtype(ratings, reviews)
+        # print('Processing {} dataset:'.format(dataset))
+        # ratings, reviews = parse_ratings(RAW_DATA_FOLDER + dataset + '/ratings.txt')
+        # ratings, reviews = change_dtype(ratings, reviews)
         
-        print('    -Saving ratings and reviews to pickle file ...')
-        ratings.to_pickle(PROCESSED_DATA_FOLDER + dataset + '/ratings.pkl')
-        reviews.to_pickle(PROCESSED_DATA_FOLDER + dataset + '/reviews.pkl')
-        del ratings, reviews
+        # print('    -Saving ratings and reviews to pickle file ...')
+        # ratings.to_pickle(PROCESSED_DATA_FOLDER + dataset + '/ratings.pkl')
+        # reviews.to_pickle(PROCESSED_DATA_FOLDER + dataset + '/reviews.pkl')
+        # del ratings, reviews
         
         print('    -Reading breweries.csv, users.csv and and beers.csv ...')
         breweries = pd.read_csv(RAW_DATA_FOLDER + dataset + '/breweries.csv')
         users = pd.read_csv(RAW_DATA_FOLDER + dataset + '/users.csv')
         beers = pd.read_csv(RAW_DATA_FOLDER + dataset + '/beers.csv', 
-                            usecols=['beer_id', 'beer_name', 'brewery_id', 'style', 'avg', 'avg_computed'])
+                            usecols=['beer_id', 'beer_name', 'brewery_id', 'style', 'abv', 'avg', 'avg_computed'])
         
         print('    -Saving breweries, users and and beers to pickle file ...')
         breweries.to_pickle(PROCESSED_DATA_FOLDER + dataset + '/breweries.pkl')
