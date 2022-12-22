@@ -54,8 +54,10 @@ Processed data are available [here](https://drive.switch.ch/index.php/s/QBPV4pti
 </pre>
 
 If one wants to manually re-produced the processed data from the raw data, simply move to the `src` folder and execute:
-    
-    `python process_raw_data.py`
+
+```
+python process_raw_data.py
+```
 
 Make sure to have all the requirements and that the data in the raw data folder have been uncompressed. Be aware that running the script took around 20 min on Apple silicon M1 Pro. 
 
