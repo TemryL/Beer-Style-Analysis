@@ -113,7 +113,7 @@ To determine which beers to place on the shelf for each category, we set a thres
 **Task 7**: Github-site building and data story redaction.
 
 
-## 🤝 Team memnbers contribution
+## 🤝 Team members contribution
 <table class="tg">
 <thead>
   <tr>
