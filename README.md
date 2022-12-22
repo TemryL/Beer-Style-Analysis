@@ -86,21 +86,21 @@ To determine which adjectives best describe each style, we carry out a lexical a
 
 This lexical analysis can be decomposed in the following steps:
 
--Step 1: Group reviews by language.
--Step 2: Group reviews by beer styles.
--Step 3: Extract adjectives from the textual reviews.
--Step 4: Group adjectives by supra style.
--Step 5: Compute the TF-IDF matrix where the documents are the list of adjectives for each supra styles.
--Step 6: Visualize the most informatives adjectives per supra style.
+- Step 1: Group reviews by language.
+- Step 2: Group reviews by beer styles.
+- Step 3: Extract adjectives from the textual reviews.
+- Step 4: Group adjectives by supra style.
+- Step 5: Compute the TF-IDF matrix where the documents are the list of adjectives for each supra styles.
+- Step 6: Visualize the most informatives adjectives per supra style.
 For this lexical analysis one of the main assumption is that most of the adjectives in the reviews are actually used to describe the beer.
 
 **Task4**: Categorisation of the users.
 
 In this part of the analysis, the objective is to categories the users. These categories of users will be the different shelves that each supermaket will have to put in its beers aisle. The different categories that we think can be relevant for the customers are 'experienced beer consumers' which will target the customers which are familiar with beers and consider themselves as regular consumers. 'Novice beer consumers' which on the other hand are rather less accustomed to beer consumption. Another category to showcase is 'explorator beer consumers' which targets all customers which want to try a new kind of beer and want to discover something new. The analysis for this category is based on the users which tend to rate beers that are less popular. Finally, the category 'nationalist' doens't require any processing on the users but will be used to distonguish the supermarket according to their country. It will thus be used to showcase all the beers that are the most popular in the country we are in.
 
--Step 1: Perform a linear regression to justify the fact that the level of experience of a user and his country of origin influences his preferences in beer styles.
--Step 2: Find the thresholds for the different categories
--Step 3: Categorise the users
+- Step 1: Perform a linear regression to justify the fact that the level of experience of a user and his country of origin influences his preferences in beer styles.
+- Step 2: Find the thresholds for the different categories
+- Step 3: Categorise the users
 
 **Task 5**: Find the favorite supra-styles for each category of users.
 
