@@ -72,13 +72,7 @@ This first step correponds to the data processing that is explained in the above
 
 **Task 2**: Descriptive statistical analysis of each beer style and finding the supra styles.
 
-Some analyses are quite trivial and will not be detailed here. We will focus on the most interesting methods.
-
-- What are the most common beer style? (based on number of ratings and reviews).
-- Investigate if we can merge some style together. (ex: English pale ale vs American pale ale).
-- What are the characteristics of each beer style (abv, location)
-- What are the grades for each beer style?. (appearance, taste, palate, aroma)
-- Analysis of beers style based on location.
+The main focus of this task is to merge beer styles into supra-styles based on expert knowledge. A descriptive analysis of each supra-style is then provided (abv, ratings, main production and rating countries).
 
 **Task 3**: Textual analysis of the reviews in order to present a textual description of the supra-styles.
 
@@ -106,11 +100,11 @@ In this part of the analysis, the objective is to categories the users. These ca
 
 **Task 5**: Find the favorite supra-styles for each category of users.
 
-Once we have our users categories, we want to determine which are the styles of beers users prefer depending on their country and level of experience. For this task we first use a Bayesian approach to estimate ratings given beer features (brewery, location, abv, beer style) and remove ratings which are too far from our prediction. We will then compute the average scores for each user category for each style and sort out the most liked ones
+Once we have our users categories, we want to determine which are the styles of beers users prefer depending on their country and level of experience. For this task we simply determine the user favorite styles depending on their category and country based on their average ratings. 
 
 **Task 6**: Find the best beers to place on the shelves.
 
-To determine which beers to place on the shelf for each category, we set a threshold to the minimum number of ratings such that we take into account the rating of this beer to find the best beers for each style. In fact, one beer might have been rated only once by a user who gave it a very high rating, but another user might have given it a lower rating, thus this beer should not necessarily be prefered over a beer with slightly lower average rating but with many ratings.
+To determine which beers to place on the shelf for each category, we set a threshold to the minimum number of ratings such that we take into account the rating of this beer to find the best beers for each style. In fact, one beer that has been rated bay only one user may have a very high rating, but another user might have given it a lower rating, thus this beer should not necessarily be prefered over a beer with slightly lower average rating but with many ratings. From the remaining beers, we pick the top-5 best rated beers for the top-3 favorite styles of each category. 
 
 **Task 7**: Github-site building and data story redaction.
 
